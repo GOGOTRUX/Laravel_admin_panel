@@ -1,0 +1,10 @@
+{
+  "name": "GoGoTrux",
+  "version": "0.0.1",
+  "resolutions": {
+    "jquery": "^3.2.1"
+  },
+  "dependencies": {
+    "admin-lte": "^2.4.8"
+  }
+}

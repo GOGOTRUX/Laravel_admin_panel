@@ -1,0 +1,42 @@
+<?php
+
+return [
+    'sns_key' => "AKIAICTV3TKROYAWPPHQ",
+    'sns_secret' => "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",
+    'dir_profile_img' => "/tmp/operator_photo",
+    'dir_veh_img' => "/tmp/vehicle",
+    'home_banner_img' => "/tmp/home",
+    'amazon_s3_url' => "https://s3.amazonaws.com/",
+    'secret'=>'zh/FyevgpKQ+uWIYcJPQlocF9ndFDf6rz6C76XAy',
+    'key'=>'AKIATTMOEK7GHCEJCMZI',
+    'bucket-name' => "ggt-operator-docs-live",
+    'upload-image-folder' => "upload-ggt-operator-docs-live/",
+     'public-bucket' => "ggt-operator-public-live",
+    'CityStatePincodeFile' => "/home/earth/Downloads/test.csv",
+	//'firebase-api-key' => "AIzaSyBwCaWyAdqUw3G2XsLr8CVZx8bVYRHymqQ",
+'firebase-api-key' =>'AIzaSyDGjNs0OAksxMp77450wj_56seTWtZvI2I',
+'firebase-server-key' => 'AAAAosNcJCQ:APA91bFxShBPYCsdUQbDXwcXZk4i3H6-mMrWXeEzAUgue9-3Ew8mEx18yStVLMBVpcl2M2_wYUhjnqlJauX6_B5diJXTLkfu7MJcQE5hGGNJy2heMAU4Cc29oe49e-UNsd3Oj_ezhmmN', //live acc server key
+//	'firebase-server-key' => 'AAAARufaT4A:APA91bG8mbBKiNy93lxDDIWgyD4LTdFzRKEZ_PZkHiAYo05kEgz2YzKdNc7jKHe-C03isK_1u53FQpbp3WW1WFX3SxVy1tGMJ_p6k4nhXNFssdfJD4OQhngE5i3TExTlIN0x4IUB7xWC',
+	'fcm-url' => "https://fcm.googleapis.com/fcm/send",
+	'Source' => "support@gogotrux.com",
+    'dir_cheque_img' => "/tmp/operator_cheque_img",
+    'su_admin_email' => "gogotrux@e-arth.in",
+    'database_backup' => "/tmp/live-db-backup/",
+    'database' => 'gogotruxLiveDB',
+    'dbuser' => 'root',
+    'dbpassword' => 'root',
+    'dbhost' => '172.31.80.192',
+    's3_path' => "https://s3.us-east-2.amazonaws.com/ggt-operator-docs",
+    //'razor_key' => 'rzp_test_RMOUDX1Sd5voo4',
+    //'razor_secret' => 'E8MEKjJrLlh8xsPv4gbuTBd8',
+    'razor_key' => "rzp_live_ojCS0W58OE83Rg",    //live
+    'razor_secret' => "qjR0FVfpOQqIRxQ66zJBa3zx",    //live
+    'razor_accounts_api' => 'https://api.razorpay.com/v1/beta/accounts',
+    'razor_payment_link_api' => 'https://api.razorpay.com/v1/invoices/',
+    'dir_user_profile_img' => "/tmp/user_photo",
+    'bucket-name-user' => "ggt-user-docs-live",
+    'upload-user-image-folder' => "upload-ggt-user-docs/",
+    'dir_path_admin_images' => "/admin/public/images/",
+    'dir_admin_images' => "admin-edit-operator-images/",
+    'user_vehicle_image' => "/users/assets/images/",
+];
