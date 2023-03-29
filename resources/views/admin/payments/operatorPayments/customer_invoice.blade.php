@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container" style="border:1px solid">
+		<div class="panel-body p-0">
+			<div class="view-op">
+				<div class="row">
+					<div class="section">
+						<!-- <div class="form-group pdf-title" style="text-align: center;">Invoice</div> -->
+						<img src="{{ asset('images/logo-blue-cmprx.png')}}" alt="GoGoTRux">
+						<h3 style="text-align: center;">Invoice</h3>
+						<div class="detail-info">
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-6">
+										<p><b>FortSatt Business Technologies Pvt. Ltd.</b></p>
+										<p>Vedanta House, 1st Floor, Plot No 6, Tejeswani 1, Near Medipoint Hospital, Aundh, Pune, 411007</p>
+										<p><small><b>CIN:</b> U72900PN2018PTC178466</small></p>
+									</div>
+									<div class="col-md-6">
+										<!-- <p style="text-align: center;"><b>Vendor Bank Details</b></p> -->
+										<div class="row">
+											<div class="col-md-6">
+												<p><b>Account Name:</b> FortSatt Business Technologies Pvt. Ltd.</p>
+												<p><b>Account No.:</b> 38527863582</p>
+												<p><b>Bank IFSC:</b> SBIN0015707</p>
+											</div>
+											<div class="col-md-6">
+												<p><b>Bank Name:</b> State Bank of India</p>
+												<p><b>Bank Branch:</b> PBB Aundh, Pune</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+							<div class="col-md-12">
+								<div class="row">
+									<div class="col-md-6">
+										<p><b>Customer Name:</b> {{ $user_first_name ? $user_first_name : '-' }}</p>
+										<p><b>Customer Mobile:</b> {{ $user_mobile_no ? $user_mobile_no : '-' }}</p>
+										<p><b>Address:</b> {{ $cust_address ? $cust_address : '-' }}</p>
+									</div>
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-md-6">
+												<p><b>Invoice No.:</b> {{ $cust_invoice_no ? $cust_invoice_no : '-' }}</p>
+											</div>
+											<div class="col-md-6">
+												<p><b>Invoice Date:</b> {{ $updated_at ? $updated_at : '-' }}</p>
+											</div>
+										</div>
+										<p><b>GSTN:</b></p>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-md-6">
+												<p><b>Trip Transaction Id:</b> {{ $user_order_transaction_id ? $user_order_transaction_id : '-' }}</p>
+												<p><b>Trip Date:</b> {{ $trip_date ? $trip_date : '-' }}</p>
+											</div>
+											<div class="col-md-6">
+												<p><b>Trip Id:</b> {{ $trip_transaction_id ? $trip_transaction_id : '-' }}</p>
+												<p><b>Trip Time:</b> {{ $trip_time ? $trip_time : '-' }}</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-md-6">
+												<p><b>Driver Partner:</b> {{ $op_first_name ? $op_first_name : '-' }}</p>
+												<p><b>Booking Date:</b> {{ $book_date ? $book_date : '-' }}</p>
+											</div>
+											<div class="col-md-6">
+												<p><b>Trip Payment Mode:</b> {{ $payment_type ? $payment_type : '-' }}</p>
+												<p><b>Booking Time:</b> {{ $book_time ? $book_time : '-' }}</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-md-6">
+										<div class="row">
+											<div class="col-md-6">
+												<p><b>Pickup Address:</b> {{ $start_address_line_1 ? $start_address_line_1 : '-' }}</p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6">
+												<p><b>Material Type:</b> {{ $material_type ? $material_type : '-' }}</p>
+												<p><b>Trip Distance (km):</b> {{ $total_distance ? $total_distance : '-' }}</p>
+											</div>
+											<div class="col-md-6">
+												<p><b>Weight (kg):</b> {{ $weight ? $weight : '-' }}</p>
+												<p><b>Amount (Rs):</b> {{ $actual_amount ? $actual_amount : '-' }}</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<p><b>Delivery Address:</b> {{ $dest_address_line_1 ? $dest_address_line_1 : '-' }}</p>
+									</div>
+								</div>
+								
+								<p><b>Total Amount (In Words):</b> {{ $amount_in_words_cust ? $amount_in_words_cust : '-' }}</p>
+								
+								<p style="text-align: center;"><b>Thank You for using GOGOTRUX Services. Logon to <a href="gogotrux.com">gogotrux.com</a><b></p>
+								<p style="text-align: center;">Billing Queries:  7350920881:Email: gogotrux@gmail.com: New Trip Booking 70305 70500/70305 80500: www.gogotrux.com</p>
+								<p style="text-align: center;"><small>GOGOTRUXTM  is owned by FortSatt Business Technologies Pvt. Ltd, a Registered Startup under DIPP, Govt. of India. Exempt from GST payment.</small></p>
+							</div>
+						</div>					
+					</div>					
+				</div>
+			</div>
+		</div>	
+	</div>	
+</body>
+</html>
+<!-- JS scripts for this page only -->
+
+
